@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-cream: #FFFBF2;
+  --color-chocolate: #2D1B08;
+  --color-cinnamon: #D2691E;
+}
+
+@layer base {
+  body {
+    background-color: #FFFBF2; /* Warm soft cream background from the design */
+    color: #2D1B08; /* Deep dark chocolate text */
+  }
+}
+
+/* Bold Typography / Brutalist-Bakery Card & Button Styles */
+.bold-card {
+  background-color: #ffffff;
+  border: 2.5px solid #2D1B08;
+  border-radius: 0px;
+  box-shadow: 4px 4px 0px 0px #2D1B08;
+}
+
+.bold-card-hover {
+  transition: all 0.2s ease-in-out;
+}
+.bold-card-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #2D1B08;
+}
+
+.bold-button {
+  background-color: #2D1B08;
+  color: #ffffff;
+  border: 2px solid #2D1B08;
+  border-radius: 0px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+.bold-button:hover {
+  background-color: #D2691E;
+  border-color: #2D1B08;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px 0px #2D1B08;
+}
+.bold-button:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px 0px #2D1B08;
+}
+
+.bold-button-secondary {
+  background-color: transparent;
+  color: #2D1B08;
+  border: 2px solid #2D1B08;
+  border-radius: 0px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease-in-out;
+}
+.bold-button-secondary:hover {
+  background-color: #FFFBF2;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px 0px #2D1B08;
+}
+
+.bold-tag {
+  background-color: #D2691E;
+  color: #ffffff;
+  border: 1.5px solid #2D1B08;
+  border-radius: 0px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bold-input {
+  background-color: #ffffff;
+  border: 2px solid #2D1B08;
+  border-radius: 0px;
+  color: #2D1B08;
+  font-weight: 500;
+}
+.bold-input:focus {
+  outline: none;
+  border-color: #D2691E;
+  box-shadow: 2px 2px 0px 0px #2D1B08;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+

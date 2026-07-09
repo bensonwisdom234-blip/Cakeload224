@@ -1,0 +1,6 @@
+{
+  "name": "Cakeload",
+  "description": "Your go-to spot for soft, gooey cinnamon rolls and irresistible sweets. Custom pre-order builder, weekly drop tracker, and flavorful menu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
